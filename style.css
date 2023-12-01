@@ -1,0 +1,60 @@
+body{
+    background-color: #c2dea0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px; 
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  text-align: center; 
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; 
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%; 
+  }
+
+  .carousel-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+}
